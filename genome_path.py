@@ -7,6 +7,12 @@ def PathToGenome(path):
     out = "".join(genome)  
     return out  
 
-print(PathToGenome(data))
-if "AGCAGATCATCGG" == PathToGenome(data):
-    print(True)
+# print(PathToGenome(data))
+# if "AGCAGATCATCGG" == PathToGenome(data):
+#     print(True)
+
+f = open("./data/dataset_198_3.txt").read().split()
+output = PathToGenome(f)
+file = open("file2.txt", "w")
+file.write(output)
+file.close()
