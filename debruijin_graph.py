@@ -28,11 +28,11 @@ def OutputFormat(txt):
 
 
 
-data = "AAGATTCTCTAAGA"
-print(OutputFormat(Overlap(kmer_generator(4, data), node_generator(4, data))))
+# data = "ACGTGTATA"
+# print(OutputFormat(Overlap(kmer_generator(3, data), node_generator(3, data))))
 
 
-# data2 = open("./data/dataset_199_6.txt").read().split()
+data2 = open("./data/dataset_199_6 (1).txt").read().split()
 
-# with open("./file4.txt", "w") as file:
-#     file.write(OutputFormat(Overlap(kmer_generator(4, data2), node_generator(4, data2))))
+with open("./file4.txt", "w") as file:
+    file.write(OutputFormat(Overlap(kmer_generator(12, data2[1]), node_generator(12, data2[1]))))
