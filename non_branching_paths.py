@@ -121,8 +121,8 @@ def MaximalNonBranchingPaths(graph):
 
 
 
-# p1 = "./testfile.txt"
-# p2 = "./data/dataset_6207_2.txt"
+p1 = "./testfile.txt"
+p2 = "./data/dataset_6207_2.txt"
 
 data_dict = read_data(p2)
 paths, matrix, ic = MaximalNonBranchingPaths(data_dict)
